@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'Universo';
+  src: url('/fonts/universo.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "tailwindcss";
+
+@theme {
+  
+  --color-accent: #007A79;
+  --color-cream: #fff0e4;
+  --color-cream-light: #fcf8ea;
+  --color-cream-gray: #a99f98;
+  --color-cream-dark: #25241f;
+
+  --color-ink: #0A0A0A;
+
+  --font-sans: "Archivo";
+  --font-display: "Archivo Black", sans-serif;
+  --font-heading: "Universo", "Archivo Black", sans-serif;
+  --font-body: "Archivo", sans-serif;
+  --font-serif: "Playfair Display", serif;
+}

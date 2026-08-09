@@ -1,6 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Archivo, Playfair_Display } from "next/font/google";
 
+const archivo = Archivo({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-serif",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -9,11 +20,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={` h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={` ${archivo.variable} ${playfairDisplay.variable} h-full antialiased`}>
+      <body className="  min-h-full flex flex-col">{children}</body>
     </html>
   );
 }
