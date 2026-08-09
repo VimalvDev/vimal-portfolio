@@ -26,3 +26,8 @@
   --font-body: "Archivo", sans-serif;
   --font-serif: "Playfair Display", serif;
 }
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
