@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import 'lenis/dist/lenis.css'
 import { Archivo, Playfair_Display } from "next/font/google";
-import Navigation from '@/components/shared/Navigation'
+import SiteShell from "@/components/shared/SiteShell";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -23,7 +24,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${archivo.variable} ${playfairDisplay.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
-        <Navigation>{children}</Navigation>
+        <SiteShell>{children}</SiteShell>
       </body>
     </html>
   );
