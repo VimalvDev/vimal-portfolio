@@ -61,10 +61,10 @@ export default function ParallaxSection() {
         <div className="absolute inset-0 z-0 pointer-events-none">
           {/* Image 1: landscape top-left */}
           <Parallax
-            yPercent={-50}
+            yPercent={-90}
             rotation={-10}
             trigger={sectionRef}
-            className="absolute left-[-5%] md:left-[0%] w-48 md:w-[280px] lg:w-[350px] aspect-[4/3]"
+            className="absolute left-0 md:left-[0%] w-28 md:w-[280px] lg:w-[350px] aspect-[4/3]"
             style={{ transform: "rotate(-2deg)" }}
           >
             <img
@@ -78,7 +78,7 @@ export default function ParallaxSection() {
             yPercent={60}
             rotation={4}
             trigger={sectionRef}
-            className="absolute top-[5%] md:top-[15%] right-[-2%] md:right-[0%] w-40 md:w-[240px] lg:w-[300px] aspect-[3/4]"
+            className="absolute top-[5%] md:top-[15%] right-[-0%] md:right-[0%] w-20 md:w-[240px] lg:w-[300px] aspect-[3/4]"
             style={{ transform: "rotate(4deg)" }}
           >
             <img
@@ -92,7 +92,7 @@ export default function ParallaxSection() {
             yPercent={-50}
             rotation={5}
             trigger={sectionRef}
-            className="absolute bottom-[-50%] left-[-2%] md:left-[0%] w-44 md:w-[280px] lg:w-[340px] aspect-[16/9]"
+            className="absolute bottom-[-50%] left-[-2%] md:left-[0%] w-34 md:w-[280px] lg:w-[340px] aspect-[16/9]"
             style={{ transform: "rotate(2deg)" }}
           >
             <img
@@ -104,7 +104,7 @@ export default function ParallaxSection() {
         </div>
 
         {/* Giant headline — clip-path gray→black reveal */}
-        <div className="relative z-10 flex justify-center w-full px-4 sm:px-6 mt-12 md:px-24 md:mt-32">
+        <div className="relative z-10 flex justify-center w-full px-4 sm:px-6 mt-40 mb-40 md:px-24 md:mt-32">
           <ClipRevealText
             text="Two skills. One person. Nothing lost in the handoff."
             className="font-heading font-black uppercase text-center w-full block text-[11vw] sm:text-[9vw] md:text-7xl lg:text-[110px] leading-[0.86] tracking-tight max-w-[1000px]"
@@ -145,13 +145,13 @@ export default function ParallaxSection() {
       </div>
 
       {/* ── "Creative direction" paragraph ── */}
-      <div className="w-full px-4 sm:px-6 mx-auto mt-16 text-center md:mt-32 max-w-[90vw] md:max-w-[60vw]">
+      <div className="w-full px-4 sm:px-6 mx-auto mt-30 text-center md:mt-32 max-w-[90vw] md:max-w-[60vw]">
         <LineRevealText
           splitType="lines"
           stagger={0.17}
           start="top 100%"
           end="bottom 60%"
-          className="leading-tight text-cream-dark text-lg sm:text-xl md:text-[2.5vw] font-body font-semibold"
+          className="leading-tight text-cream-dark text-2xl sm:text-xl md:text-[2.5vw] font-body font-semibold"
         >
           Working across both ends of a project means nothing gets lost between design and code.
         </LineRevealText>
